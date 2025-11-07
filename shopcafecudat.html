@@ -1,0 +1,179 @@
+<body>
+  <header>
+    <link rel="stylesheet" href="shop.css">
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo">BĐ</div>
+        <div>
+          <h1>ĐẠT ĐUBAI CAFE TÂY NGUYÊN</h1>
+          <div class="muted" style="font-size:12px">Quán cà phê &amp; không gian sáng tạo</div>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#menu">Thực đơn</a></li>
+          <li><a href="#about">Giới thiệu</a></li>
+          <li><a href="#gallery">Thư viện</a></li>
+          <li><a href="#contact">Liên hệ</a></li>
+        </ul>
+      </nav>
+      <div style="display:flex;gap:10px;align-items:center">
+        <a class="btn" href="#menu">Đặt bàn</a>
+        <button class="hamburger" aria-label="Mở menu" onclick="toggleMenu()">☰</button>
+      </div>
+    </div>
+    <div id="mobileMenu" style="display:none;background:linear-gradient(180deg, rgba(11,18,32,0.95), rgba(11,18,32,0.98));padding:12px 18px">
+      <div class="container">
+        <a href="#menu" style="display:block;padding:8px 0;color:var(--accent-2)">Thực đơn</a>
+        <a href="#about" style="display:block;padding:8px 0;color:var(--accent-2)">Giới thiệu</a>
+        <a href="#gallery" style="display:block;padding:8px 0;color:var(--accent-2)">Thư viện</a>
+        <a href="#contact" style="display:block;padding:8px 0;color:var(--accent-2)">Liên hệ</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="container hero">
+      <div class="hero-left">
+        <p class="chip">Mở cửa: 07:00 - 22:00</p>
+        <h2>Thưởng thức ly cà phê trọn vị trong không gian ấm áp</h2>
+        <p class="muted">Cà phê rang xay thủ công, bánh ngọt tươi mỗi ngày và góc làm việc yên tĩnh. Wi‑Fi miễn phí, ổ cắm đầy đủ.</p>
+        <div class="cta-row">
+          <a class="btn" href="#menu">Xem thực đơn</a>
+          <a class="chip" style="text-decoration:none">Giao hàng • Tại chỗ</a>
+        </div>
+        <div style="margin-top:18px" class="chips">
+          <div class="chip">Cà phê rang</div>
+          <div class="chip">Trà thảo mộc</div>
+          <div class="chip">Bánh ngọt</div>
+        </div>
+      </div>
+      <aside class="hero-right">
+        <div class="card-glass" style="height:100%">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <div>
+              <strong>Combo Buổi Sáng</strong>
+              <div class="muted" style="font-size:13px">Cà phê + Bánh muffin</div>
+            </div>
+            <div style="text-align:right">
+              <div class="price">65.000₫</div>
+              <div class="muted" style="font-size:12px">Ưu đãi hôm nay</div>
+            </div>
+          </div>
+          <div style="flex:1"></div>
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <div class="muted" style="font-size:13px">Free Wi‑Fi • Ổ cắm</div>
+            <a class="btn" href="#contact">Đặt bàn</a>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="menu" class="container section">
+      <h3>Thực đơn nổi bật</h3>
+      <div class="menu-grid">
+        <article class="menu-item card">
+          <h4>Espresso</h4>
+          <div class="muted">Ý, rang đậm</div>
+          <div class="price">40.000₫</div>
+        </article>
+        <article class="menu-item card">
+          <h4>Cappuccino</h4>
+          <div class="muted">Bọt sữa mịn</div>
+          <div class="price">55.000₫</div>
+        </article>
+        <article class="menu-item card">
+          <h4>Cold Brew</h4>
+          <div class="muted">Ủ lạnh 12 giờ</div>
+          <div class="price">60.000₫</div>
+        </article>
+        <article class="menu-item card">
+          <h4>Trà Matcha Latte</h4>
+          <div class="muted">Matcha hảo hạng</div>
+          <div class="price">65.000₫</div>
+        </article>
+        <article class="menu-item card">
+          <h4>Bánh Muffin</h4>
+          <div class="muted">Tươi mỗi ngày</div>
+          <div class="price">35.000₫</div>
+        </article>
+        <article class="menu-item card">
+          <h4>Granola Bowl</h4>
+          <div class="muted">Ăn sáng lành mạnh</div>
+          <div class="price">70.000₫</div>
+        </article>
+      </div>
+    </section>
+
+    <section id="gallery" class="container section">
+      <h3>Thư viện</h3>
+      <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=" alt="cafe1">
+        <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=" alt="cafe2">
+        <img src="dat1.jpg" alt="cafe3">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=" alt="cafe4">
+      </div>
+    </section>
+
+    <section id="about" class="container section">
+      <div class="two-col">
+        <div>
+          <h3>ĐẠT ĐUBAI CAFE TÂY NGUYÊN</h3>
+          <div class="card">
+            <p class="muted">ĐẠT ĐUBAI CAFE TÂY NGUYÊN là quán cà phê nhỏ yêu thích của cộng đồng sáng tạo. Chúng tôi chọn hạt kỹ lưỡng, rang theo lô và pha thủ công bởi barista có kinh nghiệm. Không gian phù hợp cho họp nhóm, làm việc hoặc thư giãn.</p>
+            <ul class="muted" style="margin-top:12px">
+              <li>Không gian có máy lạnh &amp; wifi</li>
+              <li>Sự kiện nhạc acoustic vào thứ 7</li>
+              <li>Chấp nhận đặt trước &amp; giao hàng</li>
+            </ul>
+          </div>
+        </div>
+        <aside>
+          <div class="card">
+            <h4>Thông tin</h4>
+            <p class="muted">Địa chỉ: 123 Quang Trung, Huyện Đức Cơ, Tỉnh Gia Lai</p>
+            <p class="muted">SĐT: 0348039591</p>
+            <p class="muted">Email: Bledat84@gmail.com</p>
+            <div style="margin-top:10px">
+              <a class="btn" href="#contact">Gửi yêu cầu</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="contact" class="container section">
+      <h3>Liên hệ</h3>
+      <div class="two-col">
+        <div class="card">
+          <form onsubmit="submitForm(event)">
+            <label for="name">Họ và tên</label>
+            <input id="name" required placeholder="Nguyễn Văn A">
+            <label for="email">Email</label>
+            <input id="email" type="email" required placeholder="name@example.com">
+            <label for="msg">Tin nhắn</label>
+            <textarea id="msg" rows="5" placeholder="Bạn muốn đặt bàn / sự kiện..."></textarea>
+            <button type="submit">Gửi</button>
+          </form>
+        </div>
+        <aside>
+          <div class="card">
+            <h4>Giờ mở cửa</h4>
+            <p class="muted">Thứ Hai - Chủ Nhật: 07:00 - 22:00</p>
+            <h4 style="margin-top:12px">Theo dõi</h4>
+            <div class="muted">Instagram • Facebook • Tiktok</div>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px">
+      <div class="muted">© 2025 LÊ BÁ ĐẠT.</div>
+      <div class="muted">Made with ☕ in Việt Nam</div>
+    </div>
+  </footer>
+   
+</body>
+</html>
